@@ -1,0 +1,286 @@
+*{
+	margin:0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+input{
+	outline: none;
+}
+
+.nav-in, .video, .line, .messages, .footer-in{
+	width:1000px;
+	margin: 0 auto;
+}
+/*  nav start */
+.nav{
+	height:58px;
+	text-align: center;
+	line-height: 58px;
+	background-color: #191D3A;
+}
+.nav .nav-in .logo{
+	float: left;
+	margin-right: 50px;
+}
+.nav .nav-in ul li{
+	float:left;
+	border-right: 1px solid #252947;
+}
+.nav .nav-in ul li a{
+	display:inline-block;
+	color:#818496;
+	height:58px;
+	width:100px;
+}
+.nav .nav-in ul li a:hover{
+	background-color:#818496;
+	color:#E2E4ED;
+}
+.nav .nav-in input{
+	padding:10px;
+}
+/*  nav end */
+
+/*  banner start */
+.banner{
+	height:465px; /* 设置宽度，否则图片无法显示 */
+	background: url(images/banner.jpg)  no-repeat top center;
+	/* 使用插入背景图的方法，有利于大图片的定位 */
+	position:relative;
+}
+.banner ul{
+	position:absolute;
+	bottom:10px;
+	left:50%;
+	margin-left: -50px;
+}
+.banner ul li{
+	float:left;
+}  
+/* li标签和a标签必须同时左浮动，只有li浮动，圆点消失，只有a浮动，圆点竖向显示？ */
+.banner ul li a{ /* 添加浮动的标签，具有行内块的属性 */
+	float:left;
+	width: 15px;
+	height: 15px;
+	border-radius:50%; /* 边框弧度50%，呈现圆形 */
+	background-color: #FDDE90;
+	margin:5px;
+}
+.banner ul li a:hover{
+	background-color: #fff;
+}
+
+.banner ul li a.firsta{
+	background-color: #fff;
+}
+.banner ul li a.firsta:hover{
+	background-color: #FDDE90;
+}
+
+/*  banner end */
+
+
+/* video start */
+
+.video{
+	margin-top:50px;
+}
+.video ul{
+	float:left;
+	padding-right:42px;
+	text-align: center;
+}
+.video ul.lastul{
+	padding-right:0;
+}
+.video ul li img{
+	width: 218px;
+	height: 130px;
+}
+.video ul li h4{
+	color:#444866;
+	font-family:"Microsoft Yahei";
+}
+.video ul li span{
+	padding-right:10px;
+	color:#38B774;
+	font:12px "Microsoft Yahei";
+	background: url(images/sanjiaoxing.png) no-repeat right center;
+}
+/* video end */
+
+/* line start */
+.line{
+	position: relative;
+}
+.line hr{
+	margin:40px 0;
+	color:#DBE1E7;
+	width:442px;
+}
+.line .hleft{
+	float:left;
+}
+.line .hright{
+	float:right;
+}
+.line  ul{
+	position:absolute;
+	top:28px;
+	left:50%;
+	margin-left: -40px;
+}
+.line ul li{
+	float: left;
+}
+.line ul li a{
+	float:left;
+	width: 10px;
+	height: 10px;
+	border-radius:50%; 
+	background-color: #B5C0CB;
+	margin:5px;
+}
+.line ul li a:hover{
+	background-color: #2FBC71;
+}
+
+.line ul li a.fira{
+	background-color: #2FBC71;
+}
+.line ul li a.fira:hover{
+	background-color: #B5C0CB;
+}
+/* line end */
+
+/* content start */
+
+/* messages start */
+
+.content{
+	background: url(images/indexmainbg.jpg) no-repeat center center;
+	margin-top:60px;
+	height:364px;
+}
+.content .lnews{
+	background: url(images/bynewsbg.jpg) no-repeat center center;
+	width: 500px;
+	height: 310px;
+	float: left;
+	position: relative;
+	overflow: hidden; /* 嵌套外边距塌陷 */
+}
+.content .lnews .more1{
+	position:absolute;
+	top:40px;
+	left:218px;
+}
+.content .lnews ul{
+	margin-top: 117px;
+}
+.content .lnews ul li {
+	padding:11px;
+	margin-right:20px;
+	border-bottom: 1px solid #DBE1E7;
+}
+.content .lnews ul li a{
+	color:#444866;
+	font-size: 14px ;
+}
+.content .lnews ul li a:hover{
+	color:#f40;
+}
+.content .lnews ul li a span{
+	color:#CAC4CF;
+	font:12px "Microsoft Yahei";
+	padding:0 15px 0 5px;
+}
+.content .rzhaopin{
+	background: url(images/byhrbg3.jpg);
+	width: 500px;
+	height: 310px;
+	float:right;
+	position:relative;
+}
+.content .rzhaopin .more2{
+	position:absolute;
+	top:40px;
+	left:218px;
+}
+.content .rzhaopin .zplogo{
+	position:absolute;
+	top:40px;
+	left:80px;
+}
+
+.content .rzhaopin .job{
+	margin:117px 0 0 20px;
+}
+.content .rzhaopin .job ul li {
+	padding:8px;
+	margin-right:180px;
+	border-bottom: 1px solid #DBE1E7;
+}
+
+.content .rzhaopin .job h5{
+	color:#fff;
+}
+
+.content .rzhaopin .job ul li a{
+	font:14px "Microsoft Yahei";
+	color:#fff;
+}
+
+/* messages end */
+
+/* content end */
+
+/* footer start */
+.footer{
+	background-color: #191D3A;
+
+}
+.footer .footer-in{
+	height: 90px;
+	line-height: 90px;
+	position: relative;
+}
+.footer .footer-in  span{
+	font:12px "Microsoft Yahei";
+	color:#6C6E7E;
+}
+.footer .footer-in span.firstspan{
+	padding-right:80px;
+}
+.footer .footer-in .govIcon{
+	width: 38px;
+	height: 50px;
+	position:absolute;
+	top:20px;
+	right:110px;
+
+}
+.footer .footer-in a .top{
+	position:absolute;
+	top:-15px;
+	right:0px;
+
+}
+/* footer end */
+
+/* 清除浮动 */
+.clearfix:before, .clearfix:after{
+	content:"";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+.clearfix{
+	*zoom:1;
+}
